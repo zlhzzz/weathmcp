@@ -102,4 +102,4 @@ with gr.Blocks(title="城市天气服务", css="body {font-family: sans-serif}")
     gr.Markdown("数据源：Open-Meteo（免费无需 API Key）。支持全球城市名，中文会自动映射常见城市。")
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7860)
+    demo.launch(server_name="0.0.0.0", server_port=7860,share=True)

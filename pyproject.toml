@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weathmcp"
+version = "1.0.0"
+description = "城市天气 MCP 服务 (Weather MCP Service)"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0,<2.0.0",
+    "requests>=2.31.0",
+    "gradio>=5.0.0",
+]
+
+[project.scripts]
+weathmcp-server = "server:mcp.run"
+
+[project.urls]
+Homepage = "https://modelscope.cn/studios/Zlhlihuan/weathmcp"
+
+[tool.setuptools]
+py-modules = ["server", "app"]
