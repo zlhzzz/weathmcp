@@ -11,6 +11,17 @@ deployspec:
   entry_file: server.py
 ---
 
+## 服务配置 (Service Config)
+
+```yaml
+service_config:
+  transport_type: stdio
+  entry_point: python server.py
+  command: python server.py
+  env: {}
+  description: 基于 FastMCP 的 stdio 模式天气查询服务
+```
+
 # 城市天气 MCP 服务 (Weather MCP)
 
 基于 [Model Context Protocol](https://modelcontextprotocol.io/) 的城市天气查询 MCP 服务器。
